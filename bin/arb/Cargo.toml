@@ -1,0 +1,43 @@
+[package]
+name = "arb"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dex-indexer.workspace = true
+utils.workspace = true
+version.workspace = true
+object-pool.workspace = true
+shio.workspace = true
+simulator.workspace = true
+primitive-types.workspace = true
+
+fastcrypto.workspace = true
+sui-types.workspace = true
+sui-core.workspace = true
+sui-sdk.workspace = true
+sui-json-rpc-types.workspace = true
+move-core-types.workspace = true
+async-trait.workspace = true
+tokio.workspace = true
+once_cell.workspace = true
+itertools.workspace = true
+eyre.workspace = true
+mev_logger.workspace = true
+tracing.workspace = true
+cached.workspace = true
+futures.workspace = true
+futures-util.workspace = true
+tokio-tungstenite.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+clap.workspace = true
+burberry.workspace = true
+async-stream.workspace = true
+bcs.workspace = true
+async-channel.workspace = true
+num_cpus.workspace = true
+shared-crypto.workspace = true
+interprocess.workspace = true
+bincode.workspace = true
+rayon.workspace = true

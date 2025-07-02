@@ -1,0 +1,9 @@
+[package]
+name = "mev_logger"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tracing = "*"
+tracing-subscriber = { version = "*", features = ["env-filter"] }
+tracing-appender = "*"

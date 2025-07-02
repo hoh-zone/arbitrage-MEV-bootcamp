@@ -1,0 +1,24 @@
+[package]
+name = "relay"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+utils.workspace = true
+
+async-trait.workspace = true
+bcs.workspace = true
+fastcrypto.workspace = true
+mysten-network.workspace = true
+sui-network.workspace = true
+sui-types.workspace = true
+tonic.workspace = true
+tokio.workspace = true
+eyre.workspace = true
+mev_logger.workspace = true
+tracing.workspace = true
+futures.workspace = true
+futures-util.workspace = true
+tokio-tungstenite.workspace = true
+serde.workspace = true
+serde_json.workspace = true

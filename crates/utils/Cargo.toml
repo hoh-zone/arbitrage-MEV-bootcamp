@@ -1,0 +1,14 @@
+[package]
+name = "utils"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sui-sdk.workspace = true
+sui-types.workspace = true
+eyre.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+reqwest.workspace = true
+burberry.workspace = true
+move-core-types.workspace = true

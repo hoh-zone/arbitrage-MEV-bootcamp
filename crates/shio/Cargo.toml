@@ -1,0 +1,22 @@
+[package]
+name = "shio"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio.workspace = true
+burberry.workspace = true
+eyre.workspace = true
+tokio-tungstenite.workspace = true
+async-stream.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+futures.workspace = true
+serde.workspace = true
+fastcrypto.workspace = true
+shared-crypto.workspace = true
+sui-types.workspace = true
+bcs.workspace = true
+mev_logger.workspace = true
+async-channel.workspace = true
+reqwest.workspace = true

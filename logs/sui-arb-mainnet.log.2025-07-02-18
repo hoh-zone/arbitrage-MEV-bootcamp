@@ -1,0 +1,176 @@
+2025-07-02T18:00:15.419369Z  INFO arb::start_bot: start_bot with attacker: 0x8a7a96dfa78073b49d7bfc82d888dc5aaa8f5052e83b9beb367e3322bf9349ea, http_config: HttpConfig {
+    rpc_url: "http://localhost:9000",
+    ipc_path: None,
+}, collector_config: CollectorConfig {
+    relay_ws_url: None,
+    shio_ws_url: None,
+    tx_socket_path: "/tmp/sui_tx.sock",
+}, db_sim_config: DbSimConfig {
+    db_path: "/home/ubuntu/sui/db/live/store",
+    config_path: "/home/ubuntu/sui/fullnode.yaml",
+    update_cache_socket: "/tmp/sui_cache_updates.sock",
+    preload_path: "/home/ubuntu/suiflow-relay/pool_related_ids.txt",
+    use_db_simulator: false,
+    catchup_interval: 60,
+}, worker_config: WorkerConfig {
+    workers: 8,
+    num_simulators: 32,
+    max_recent_arbs: 20,
+    dedicated_short_interval: 50,
+    dedicated_long_interval: 200,
+}
+2025-07-02T18:09:05.732736Z  INFO arb::start_bot: start_bot with attacker: 0x8a7a96dfa78073b49d7bfc82d888dc5aaa8f5052e83b9beb367e3322bf9349ea, http_config: HttpConfig {
+    rpc_url: "https://fullnode.mainnet.sui.io:443",
+    ipc_path: None,
+}, collector_config: CollectorConfig {
+    relay_ws_url: None,
+    shio_ws_url: None,
+    tx_socket_path: "/tmp/sui_tx.sock",
+}, db_sim_config: DbSimConfig {
+    db_path: "/home/ubuntu/sui/db/live/store",
+    config_path: "/home/ubuntu/sui/fullnode.yaml",
+    update_cache_socket: "/tmp/sui_cache_updates.sock",
+    preload_path: "/home/ubuntu/suiflow-relay/pool_related_ids.txt",
+    use_db_simulator: false,
+    catchup_interval: 60,
+}, worker_config: WorkerConfig {
+    workers: 8,
+    num_simulators: 32,
+    max_recent_arbs: 20,
+    dedicated_short_interval: 50,
+    dedicated_long_interval: 200,
+}
+2025-07-02T18:09:06.484367Z  WARN arb::start_bot: http simulator is deprecated. use only for testing
+2025-07-02T18:09:12.359307Z DEBUG burberry::executor::telegram_message: sending message to telegram: {"chat_id": String(""), "text": String("cmd: \"target/release/arb start\\-bot \\-\\-private\\-key \\[REDACTED\\] \\-\\-rpc\\-url \\[REDACTED\\]\"\nerror: \"thread '<unnamed\\>' panicked at 'called \\`Result::unwrap\\(\\)\\` on an \\`Err\\` value: RpcError\\(Transport\\(HTTP error: error trying to connect: Connection reset by peer \\(os error 54\\)\\)\\)': /Volumes/PSSD/Code/Learn\\-Rust/sui\\-mev/crates/simulator/src/http\\_simulator\\.rs:21\""), "parse_mode": String("MarkdownV2"), "message_thread_id": String(""), "disable_notification": Bool(true), "link_preview_options": Object {"is_disabled": Bool(true)}}
+2025-07-02T18:09:12.385599Z DEBUG burberry::executor::telegram_message: sending message to telegram: {"chat_id": String(""), "text": String("cmd: \"target/release/arb start\\-bot \\-\\-private\\-key \\[REDACTED\\] \\-\\-rpc\\-url \\[REDACTED\\]\"\nerror: \"thread '<unnamed\\>' panicked at 'called \\`Result::unwrap\\(\\)\\` on an \\`Err\\` value: RpcError\\(Transport\\(HTTP error: error trying to connect: Connection reset by peer \\(os error 54\\)\\)\\)': /Volumes/PSSD/Code/Learn\\-Rust/sui\\-mev/crates/simulator/src/http\\_simulator\\.rs:21\""), "parse_mode": String("MarkdownV2"), "message_thread_id": String(""), "disable_notification": Bool(true), "link_preview_options": Object {"is_disabled": Bool(true)}}
+2025-07-02T18:09:13.593783Z ERROR burberry::executor::telegram_message: fail to send message to telegram: response status: 404 Not Found, body: {"ok":false,"error_code":404,"description":"Not Found"}
+2025-07-02T18:09:13.593915Z  WARN burberry::executor::telegram_message: telegram message fails to send but error reporting is disabled
+2025-07-02T18:09:13.594001Z ERROR panic_hook: err_msg="thread '<unnamed>' panicked at 'called `Result::unwrap()` on an `Err` value: RpcError(Transport(HTTP error: error trying to connect: Connection reset by peer (os error 54)))': /Volumes/PSSD/Code/Learn-Rust/sui-mev/crates/simulator/src/http_simulator.rs:21"
+2025-07-02T18:09:13.596570Z DEBUG burberry::executor::telegram_message: sending message to telegram: {"chat_id": String(""), "text": String("cmd: \"target/release/arb start\\-bot \\-\\-private\\-key \\[REDACTED\\] \\-\\-rpc\\-url \\[REDACTED\\]\"\nerror: \"thread 'main' panicked at 'called \\`Result::unwrap\\(\\)\\` on an \\`Err\\` value: Any \\{ \\.\\. \\}': /Volumes/PSSD/Code/Learn\\-Rust/sui\\-mev/crates/object\\-pool/src/lib\\.rs:23\""), "parse_mode": String("MarkdownV2"), "message_thread_id": String(""), "disable_notification": Bool(true), "link_preview_options": Object {"is_disabled": Bool(true)}}
+2025-07-02T18:09:13.605091Z ERROR burberry::executor::telegram_message: fail to send message to telegram: response status: 404 Not Found, body: {"ok":false,"error_code":404,"description":"Not Found"}
+2025-07-02T18:09:13.605178Z  WARN burberry::executor::telegram_message: telegram message fails to send but error reporting is disabled
+2025-07-02T18:09:13.605218Z ERROR panic_hook: err_msg="thread '<unnamed>' panicked at 'called `Result::unwrap()` on an `Err` value: RpcError(Transport(HTTP error: error trying to connect: Connection reset by peer (os error 54)))': /Volumes/PSSD/Code/Learn-Rust/sui-mev/crates/simulator/src/http_simulator.rs:21"
+2025-07-02T18:09:14.764488Z ERROR burberry::executor::telegram_message: fail to send message to telegram: response status: 404 Not Found, body: {"ok":false,"error_code":404,"description":"Not Found"}
+2025-07-02T18:09:14.764597Z  WARN burberry::executor::telegram_message: telegram message fails to send but error reporting is disabled
+2025-07-02T18:09:14.764644Z ERROR panic_hook: err_msg="thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Any { .. }': /Volumes/PSSD/Code/Learn-Rust/sui-mev/crates/object-pool/src/lib.rs:23"
+2025-07-02T18:10:58.277300Z  INFO arb::start_bot: start_bot with attacker: 0x8a7a96dfa78073b49d7bfc82d888dc5aaa8f5052e83b9beb367e3322bf9349ea, http_config: HttpConfig {
+    rpc_url: "https://sui-mainnet.public.blastapi.io",
+    ipc_path: None,
+}, collector_config: CollectorConfig {
+    relay_ws_url: None,
+    shio_ws_url: None,
+    tx_socket_path: "/tmp/sui_tx.sock",
+}, db_sim_config: DbSimConfig {
+    db_path: "/home/ubuntu/sui/db/live/store",
+    config_path: "/home/ubuntu/sui/fullnode.yaml",
+    update_cache_socket: "/tmp/sui_cache_updates.sock",
+    preload_path: "/home/ubuntu/suiflow-relay/pool_related_ids.txt",
+    use_db_simulator: false,
+    catchup_interval: 60,
+}, worker_config: WorkerConfig {
+    workers: 8,
+    num_simulators: 32,
+    max_recent_arbs: 20,
+    dedicated_short_interval: 50,
+    dedicated_long_interval: 200,
+}
+2025-07-02T18:12:29.386023Z  INFO arb::start_bot: start_bot with attacker: 0x8a7a96dfa78073b49d7bfc82d888dc5aaa8f5052e83b9beb367e3322bf9349ea, http_config: HttpConfig {
+    rpc_url: "https://fullnode.mainnet.sui.io:443",
+    ipc_path: None,
+}, collector_config: CollectorConfig {
+    relay_ws_url: None,
+    shio_ws_url: None,
+    tx_socket_path: "/tmp/sui_tx.sock",
+}, db_sim_config: DbSimConfig {
+    db_path: "/home/ubuntu/sui/db/live/store",
+    config_path: "/home/ubuntu/sui/fullnode.yaml",
+    update_cache_socket: "/tmp/sui_cache_updates.sock",
+    preload_path: "/home/ubuntu/suiflow-relay/pool_related_ids.txt",
+    use_db_simulator: false,
+    catchup_interval: 60,
+}, worker_config: WorkerConfig {
+    workers: 8,
+    num_simulators: 32,
+    max_recent_arbs: 20,
+    dedicated_short_interval: 50,
+    dedicated_long_interval: 200,
+}
+2025-07-02T18:12:29.803473Z  WARN arb::start_bot: http simulator is deprecated. use only for testing
+2025-07-02T18:12:35.571348Z DEBUG burberry::executor::telegram_message: sending message to telegram: {"chat_id": String(""), "text": String("cmd: \"target/release/arb start\\-bot \\-\\-private\\-key \\[REDACTED\\] \\-\\-rpc\\-url \\[REDACTED\\]\"\nerror: \"thread '<unnamed\\>' panicked at 'called \\`Result::unwrap\\(\\)\\` on an \\`Err\\` value: RpcError\\(Transport\\(HTTP error: error trying to connect: Connection reset by peer \\(os error 54\\)\\)\\)': /Volumes/PSSD/Code/Learn\\-Rust/sui\\-mev/crates/simulator/src/http\\_simulator\\.rs:21\""), "parse_mode": String("MarkdownV2"), "message_thread_id": String(""), "disable_notification": Bool(true), "link_preview_options": Object {"is_disabled": Bool(true)}}
+2025-07-02T18:12:35.653392Z DEBUG burberry::executor::telegram_message: sending message to telegram: {"chat_id": String(""), "text": String("cmd: \"target/release/arb start\\-bot \\-\\-private\\-key \\[REDACTED\\] \\-\\-rpc\\-url \\[REDACTED\\]\"\nerror: \"thread '<unnamed\\>' panicked at 'called \\`Result::unwrap\\(\\)\\` on an \\`Err\\` value: RpcError\\(Transport\\(HTTP error: error trying to connect: Connection reset by peer \\(os error 54\\)\\)\\)': /Volumes/PSSD/Code/Learn\\-Rust/sui\\-mev/crates/simulator/src/http\\_simulator\\.rs:21\""), "parse_mode": String("MarkdownV2"), "message_thread_id": String(""), "disable_notification": Bool(true), "link_preview_options": Object {"is_disabled": Bool(true)}}
+2025-07-02T18:12:36.714971Z ERROR burberry::executor::telegram_message: fail to send message to telegram: response status: 404 Not Found, body: {"ok":false,"error_code":404,"description":"Not Found"}
+2025-07-02T18:12:36.715099Z  WARN burberry::executor::telegram_message: telegram message fails to send but error reporting is disabled
+2025-07-02T18:12:36.715210Z ERROR panic_hook: err_msg="thread '<unnamed>' panicked at 'called `Result::unwrap()` on an `Err` value: RpcError(Transport(HTTP error: error trying to connect: Connection reset by peer (os error 54)))': /Volumes/PSSD/Code/Learn-Rust/sui-mev/crates/simulator/src/http_simulator.rs:21"
+2025-07-02T18:12:36.717929Z DEBUG burberry::executor::telegram_message: sending message to telegram: {"chat_id": String(""), "text": String("cmd: \"target/release/arb start\\-bot \\-\\-private\\-key \\[REDACTED\\] \\-\\-rpc\\-url \\[REDACTED\\]\"\nerror: \"thread 'main' panicked at 'called \\`Result::unwrap\\(\\)\\` on an \\`Err\\` value: Any \\{ \\.\\. \\}': /Volumes/PSSD/Code/Learn\\-Rust/sui\\-mev/crates/object\\-pool/src/lib\\.rs:23\""), "parse_mode": String("MarkdownV2"), "message_thread_id": String(""), "disable_notification": Bool(true), "link_preview_options": Object {"is_disabled": Bool(true)}}
+2025-07-02T18:12:36.805649Z ERROR burberry::executor::telegram_message: fail to send message to telegram: response status: 404 Not Found, body: {"ok":false,"error_code":404,"description":"Not Found"}
+2025-07-02T18:12:36.805758Z  WARN burberry::executor::telegram_message: telegram message fails to send but error reporting is disabled
+2025-07-02T18:12:36.805811Z ERROR panic_hook: err_msg="thread '<unnamed>' panicked at 'called `Result::unwrap()` on an `Err` value: RpcError(Transport(HTTP error: error trying to connect: Connection reset by peer (os error 54)))': /Volumes/PSSD/Code/Learn-Rust/sui-mev/crates/simulator/src/http_simulator.rs:21"
+2025-07-02T18:12:37.895512Z ERROR burberry::executor::telegram_message: fail to send message to telegram: response status: 404 Not Found, body: {"ok":false,"error_code":404,"description":"Not Found"}
+2025-07-02T18:12:37.895640Z  WARN burberry::executor::telegram_message: telegram message fails to send but error reporting is disabled
+2025-07-02T18:12:37.895700Z ERROR panic_hook: err_msg="thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Any { .. }': /Volumes/PSSD/Code/Learn-Rust/sui-mev/crates/object-pool/src/lib.rs:23"
+2025-07-02T18:12:42.938656Z  INFO arb::start_bot: start_bot with attacker: 0x8a7a96dfa78073b49d7bfc82d888dc5aaa8f5052e83b9beb367e3322bf9349ea, http_config: HttpConfig {
+    rpc_url: "https://fullnode.mainnet.sui.io:443",
+    ipc_path: None,
+}, collector_config: CollectorConfig {
+    relay_ws_url: None,
+    shio_ws_url: None,
+    tx_socket_path: "/tmp/sui_tx.sock",
+}, db_sim_config: DbSimConfig {
+    db_path: "/home/ubuntu/sui/db/live/store",
+    config_path: "/home/ubuntu/sui/fullnode.yaml",
+    update_cache_socket: "/tmp/sui_cache_updates.sock",
+    preload_path: "/home/ubuntu/suiflow-relay/pool_related_ids.txt",
+    use_db_simulator: false,
+    catchup_interval: 60,
+}, worker_config: WorkerConfig {
+    workers: 8,
+    num_simulators: 32,
+    max_recent_arbs: 20,
+    dedicated_short_interval: 50,
+    dedicated_long_interval: 200,
+}
+2025-07-02T18:12:43.369154Z  WARN arb::start_bot: http simulator is deprecated. use only for testing
+2025-07-02T18:12:48.995325Z DEBUG burberry::executor::telegram_message: sending message to telegram: {"chat_id": String(""), "text": String("cmd: \"target/release/arb start\\-bot \\-\\-private\\-key \\[REDACTED\\] \\-\\-rpc\\-url \\[REDACTED\\]\"\nerror: \"thread '<unnamed\\>' panicked at 'called \\`Result::unwrap\\(\\)\\` on an \\`Err\\` value: RpcError\\(Transport\\(HTTP error: error trying to connect: Connection reset by peer \\(os error 54\\)\\)\\)': /Volumes/PSSD/Code/Learn\\-Rust/sui\\-mev/crates/simulator/src/http\\_simulator\\.rs:21\""), "parse_mode": String("MarkdownV2"), "message_thread_id": String(""), "disable_notification": Bool(true), "link_preview_options": Object {"is_disabled": Bool(true)}}
+2025-07-02T18:12:50.151631Z ERROR burberry::executor::telegram_message: fail to send message to telegram: response status: 404 Not Found, body: {"ok":false,"error_code":404,"description":"Not Found"}
+2025-07-02T18:12:50.151754Z  WARN burberry::executor::telegram_message: telegram message fails to send but error reporting is disabled
+2025-07-02T18:12:50.151881Z ERROR panic_hook: err_msg="thread '<unnamed>' panicked at 'called `Result::unwrap()` on an `Err` value: RpcError(Transport(HTTP error: error trying to connect: Connection reset by peer (os error 54)))': /Volumes/PSSD/Code/Learn-Rust/sui-mev/crates/simulator/src/http_simulator.rs:21"
+2025-07-02T18:12:50.154714Z DEBUG burberry::executor::telegram_message: sending message to telegram: {"chat_id": String(""), "text": String("cmd: \"target/release/arb start\\-bot \\-\\-private\\-key \\[REDACTED\\] \\-\\-rpc\\-url \\[REDACTED\\]\"\nerror: \"thread 'main' panicked at 'called \\`Result::unwrap\\(\\)\\` on an \\`Err\\` value: Any \\{ \\.\\. \\}': /Volumes/PSSD/Code/Learn\\-Rust/sui\\-mev/crates/object\\-pool/src/lib\\.rs:23\""), "parse_mode": String("MarkdownV2"), "message_thread_id": String(""), "disable_notification": Bool(true), "link_preview_options": Object {"is_disabled": Bool(true)}}
+2025-07-02T18:12:51.325136Z ERROR burberry::executor::telegram_message: fail to send message to telegram: response status: 404 Not Found, body: {"ok":false,"error_code":404,"description":"Not Found"}
+2025-07-02T18:12:51.325259Z  WARN burberry::executor::telegram_message: telegram message fails to send but error reporting is disabled
+2025-07-02T18:12:51.325321Z ERROR panic_hook: err_msg="thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Any { .. }': /Volumes/PSSD/Code/Learn-Rust/sui-mev/crates/object-pool/src/lib.rs:23"
+2025-07-02T18:13:09.845354Z  INFO arb::start_bot: start_bot with attacker: 0x8a7a96dfa78073b49d7bfc82d888dc5aaa8f5052e83b9beb367e3322bf9349ea, http_config: HttpConfig {
+    rpc_url: "https://fullnode.mainnet.sui.io:443",
+    ipc_path: None,
+}, collector_config: CollectorConfig {
+    relay_ws_url: None,
+    shio_ws_url: None,
+    tx_socket_path: "/tmp/sui_tx.sock",
+}, db_sim_config: DbSimConfig {
+    db_path: "/home/ubuntu/sui/db/live/store",
+    config_path: "/home/ubuntu/sui/fullnode.yaml",
+    update_cache_socket: "/tmp/sui_cache_updates.sock",
+    preload_path: "/home/ubuntu/suiflow-relay/pool_related_ids.txt",
+    use_db_simulator: false,
+    catchup_interval: 60,
+}, worker_config: WorkerConfig {
+    workers: 8,
+    num_simulators: 32,
+    max_recent_arbs: 20,
+    dedicated_short_interval: 50,
+    dedicated_long_interval: 200,
+}
+2025-07-02T18:13:10.483832Z  WARN arb::start_bot: http simulator is deprecated. use only for testing
+2025-07-02T18:13:12.455128Z  WARN arb::start_bot: http simulator is deprecated. use only for testing
+2025-07-02T18:13:12.998155Z  INFO arb::start_bot: simulator_pool initialized: ObjectPool(len=32, max_ref=1, min_ref=1)
+2025-07-02T18:13:14.194817Z DEBUG burberry::engine: starting executor...  name="PublicTxExecutor"
+2025-07-02T18:13:14.194859Z  INFO arb::strategy: spawning 8 workers to process messages
+2025-07-02T18:13:14.194798Z  INFO utils::heartbeat: Heartbeat worker started for sui-arb
+2025-07-02T18:13:14.194867Z DEBUG burberry::engine: starting executor...  name="TelegramMessageDispatcher"
+2025-07-02T18:13:14.195012Z DEBUG arb::strategy: spawning worker... worker.id=0
+2025-07-02T18:13:14.743417Z DEBUG arb::strategy: spawning worker... worker.id=1
+2025-07-02T18:13:15.293528Z DEBUG arb::strategy: spawning worker... worker.id=2
+2025-07-02T18:13:15.913359Z DEBUG arb::strategy: spawning worker... worker.id=3
+2025-07-02T18:13:16.790525Z DEBUG arb::strategy: spawning worker... worker.id=4
+2025-07-02T18:13:17.453646Z DEBUG arb::strategy: spawning worker... worker.id=5
+2025-07-02T18:13:17.943215Z DEBUG arb::strategy: spawning worker... worker.id=6
+2025-07-02T18:13:18.654167Z DEBUG arb::strategy: spawning worker... worker.id=7
